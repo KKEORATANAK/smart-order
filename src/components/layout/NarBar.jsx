@@ -18,9 +18,9 @@ const NarBar = () => {
   };
 
   return (
-    <nav className="flex flex-wrap justify-between items-center py-4 px-6 sm:px-12 lg:px-24 bg-white shadow">
+    <nav className="flex justify-between items-center py-3 px-4 sm:px -12 lg:px-24 bg-white shadow">
       {/* Title of the Admin POS section */}
-      <div className="text-lg font-bold text-gray-800">Admin POS</div>
+      <div className="text-lg font-bold text-gray-800">Smart Order</div>
 
       {/* Navigation links */}
       <div className="flex-1 flex justify-center">
