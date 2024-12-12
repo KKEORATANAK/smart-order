@@ -1,10 +1,13 @@
 import React from "react";
 import NarBar from "./components/layout/NarBar";
 import Sidebar from "./components/layout/Sidebar";
+import Menu from "./components/Menu/Menu";
+import OrderSummary from "./components/OrderSummary/OrderSummary";
+import SalesAnalytic from "./components/SalesAnalytic/SalesAnalytic";
 
 const App = () => {
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen bg-gray-100">
       {/* Sidebar */}
       <Sidebar />
 
@@ -12,12 +15,12 @@ const App = () => {
       <div className="flex-1 flex flex-col">
         {/* Navbar */}
         <NarBar />
-
-        {/* Page Content */}
-        <div className="flex-1 overflow-y-auto bg-gray-100 p-4">
-          {/* Add your main content here */}
-          <h1 className="text-xl font-bold">Welcome to the Dashboard!</h1>
-          <p>This is your main content area.</p>
+        <div className="flex flex-1">
+          <div className="flex flex-col w-3/4">
+            <SalesAnalytic />
+            <Menu />
+          </div>
+          <OrderSummary />
         </div>
       </div>
     </div>
